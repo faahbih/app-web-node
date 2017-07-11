@@ -43,12 +43,23 @@ comandos básicos mysql:
 add module consign (para padronizar rotas):
 > npm install consign --save
   
-settings file server.js
-> var consign = require('consign');
-> consign().include('app/routes').into(app);
+	settings file server.js
+	var consign = require('consign');
+	consign().include('app/routes').into(app);
 
 add module body-parser ( middleware )
 > npm install body-parser --save
+	
+	settings file server.js
+ 	var bodyParser = require('body-parser');
+	app.use(bodyParser.urlencoded({extended:true}));
+
+add módulo validação de dados com express-validator ( middleware )
+> npm install express-validator --save
+	
+	settings file server.js
+ 	var expressValidator = require('express-validator');
+	app.use(expressValidator());
   
   
   
