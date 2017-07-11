@@ -18,8 +18,12 @@ adicionando recurso nodemon
 adicionando mod Mysql
 > npm install mysql --save
 
-download mysql installer for windows **instalar apenas server
+download mysql installer for windows (**instalar apenas server**)
+
 c:\program files\mysql\mysql server 5.7\bin
+
+> mysql -u root -p
+
 password : senha criada quando instalado mysql
 
 alguns comandos básicos mysql
