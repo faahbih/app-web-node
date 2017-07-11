@@ -7,6 +7,7 @@ var app = express();
 app.set('view engine', 'ejs'); // setando para ejs para renderização/rotas
 app.set('views', './app/views');
 
+app.use(express.static('./app/public'))
 app.use(bodyParser.urlencoded({extended:true})); //implementação do body-parser como middleware para recuperar requisiçoes transitadas via post
 app.use(expressValidator());
 
